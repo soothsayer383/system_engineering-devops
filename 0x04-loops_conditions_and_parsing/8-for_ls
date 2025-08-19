@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
-for f in *; do [ -e "$f" ] || continue; case "$f" in .* ) continue ;; esac; echo "${f#*-}"; done
+# For loop over non-hidden items; print part after first dash
+for f in *; do
+  [ -e "$f" ] || continue
+  case "$f" in .* ) continue ;; esac
+  echo "${f#*-}"
+done

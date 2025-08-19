@@ -1,2 +1,6 @@
 #!/usr/bin/env bash
-i=1; while [ "$i" -le 10 ]; do if [ "$i" -eq 9 ]; then echo "Best School"; echo "Hi"; else echo "Best School"; fi; i=$((i+1)); done
+# While loop; at 9th, also print "Hi" on a new line
+i=1; while [ "$i" -le 10 ]; do
+  if [ "$i" -eq 9 ]; then echo "Best School"; echo "Hi"; else echo "Best School"; fi
+  i=$((i+1))
+done
