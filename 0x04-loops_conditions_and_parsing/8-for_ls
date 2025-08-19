@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+for f in *; do [ -e "$f" ] || continue; case "$f" in .* ) continue ;; esac; echo "${f#*-}"; done
